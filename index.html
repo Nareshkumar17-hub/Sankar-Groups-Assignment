@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+</head>
+
+<body> 
+
+
+      
+      
+ 
+
+  <!--Nav-->
+
+<nav class="fixed top-0 left-0 w-full bg-[#023e7d] text-white z-50  shadow-md flex justify-between items-center p-4">
+
+   <div>
+   <h1 class="text-2xl text-white">Taskflow</h1>
+   </div> 
+
+
+    <button class="md:hidden text-2xl" id="menu-btn">
+    <i class="fa-solid fa-bars"></i>
+    </button>
+
+
+     <ul class="hidden md:flex items-center gap-8">
+      <li><a href="#home" class="hover:text-[#ffb703] transition">Home</a></li>
+      <li><a href="#features" class="hover:text-[#ffb703] transition">Features</a></li>
+      <li><a href="#pricing" class="hover:text-[#ffb703] transition">Pricing</a></li>
+      <li><a href="#contact" class="hover:text-[#ffb703] transition">Contact</a></li>
+    </ul> 
+    <div id="mobile-menu" class="md:hidden   absolute top-full left-0 w-full max-h-0 overflow-hidden   transition-all duration-300 ease-in-out">
+    <ul class=" flex flex-col gap-4 p-4 bg-[#023e7d] text-white">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+   
+</nav>
+ 
+
+
+
+ 
+    <!-- Hero content -->
+    
+     <section class="bg-[#eff6e0] min-h-screen w-full pt-8 md:pt-16 px-6 flex items-center justify-center" id="home">
+   <div class="p-4">
+     <h1 class=" text-xl md:text-5xl font-bold text-[#023e7d]">
+        Your tasks. Your flow. Your success.
+    </h1> 
+    <h1 class="text-md md:text-3xl font-bold text-[#FFD60A]">
+      Less chaos. More progress.
+    </h1> 
+   <p class=" text-sm w-full md:w-[70%]">
+  Plan your day, manage your projects, and stay on top of every task.
+  Taskflow helps you turn busy days into meaningful progress.
+   </p> 
+     
+    <div class="pt-4 flex gap-4">
+     <button class="p-2 bg-[#001d3d] text-white rounded-lg font-bold hover:text-[#001d3d] hover:border-solid hover:border-1 hover: border-[#001d3d] hover:bg-white"><a href="#pricing">Get Started →</a></button> 
+     <button class="text-[#001d3d] border-solid border-1 border-[#001d3d] p-2 rounded-lg hover:bg-[#001d3d] hover:text-white"><a href="#features"> Explore Features</a></button>
+    </div>
+   </div>
+  </section> 
+
+
+ 
+<!-- Key Features -->
+<section id="features" class="px-5 py-12 md:p-16">
+
+    <div class="flex flex-col items-center justify-center">
+        <h1 class="text-3xl md:text-4xl text-center text-[#003566] font-bold p-4">
+            Key Features
+        </h1>
+
+        <p class="hidden md:block text-center">
+            Our platform provides all the tools and features you need to build, scale, and optimize your business efficiently.
+        </p>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
+
+        <!-- Feature 1 -->
+        <div class="w-full min-w-0 min-h-[220px] border border-[#003566] rounded-xl p-5 shadow-md hover:shadow-xl transition duration-300">
+
+            <div class="flex items-center gap-3 mb-4">
+                <i class="fa-solid fa-bolt text-2xl text-[#ffd60a] shrink-0"></i>
+
+                <h2 class="text-lg md:text-xl font-bold text-[#023e7d]">
+                    Smart Task Management
+                </h2>
+            </div>
+
+            <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+                Create, organize, and prioritize your daily tasks in one place. Stay on top of your workload without feeling overwhelmed.
+            </p>
+
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="w-full min-w-0 min-h-[220px] border border-[#003566] rounded-xl p-5 shadow-md hover:shadow-xl transition duration-300">
+
+            <div class="flex items-center gap-3 mb-4">
+                <i class="fa-solid fa-folder-open text-2xl text-[#ffd60a] shrink-0"></i>
+
+                <h2 class="text-lg md:text-xl font-bold text-[#023e7d]">
+                    Project Tracking
+                </h2>
+            </div>
+
+            <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+                Manage multiple projects effortlessly. Track progress, monitor deadlines, and keep everything moving in the right direction.
+            </p>
+
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="w-full min-w-0 min-h-[220px] border border-[#003566] rounded-xl p-5 shadow-md hover:shadow-xl transition duration-300">
+
+            <div class="flex items-center gap-3 mb-4">
+                <i class="fa-solid fa-chart-line text-2xl text-[#ffd60a] shrink-0"></i>
+
+                <h2 class="text-lg md:text-xl font-bold text-[#023e7d]">
+                    Progress Insights
+                </h2>
+            </div>
+
+            <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+                See how much you've accomplished with clear progress reports. Understand your productivity and celebrate every milestone.
+            </p>
+
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="w-full min-w-0 min-h-[220px] border border-[#003566] rounded-xl p-5 shadow-md hover:shadow-xl transition duration-300">
+
+            <div class="flex items-center gap-3 mb-4">
+                <i class="fa-solid fa-calendar-check text-2xl text-[#ffd60a] shrink-0"></i>
+
+                <h2 class="text-lg md:text-xl font-bold text-[#023e7d]">
+                    Daily Planning
+                </h2>
+            </div>
+
+            <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+                Plan your day with purpose. Set priorities, organize your schedule, and focus on what matters most.
+            </p>
+
+        </div>
+
+    </div>
+</section> 
+
+
+<!--how it works --> 
+
+
+
+    <section class="px-5 py-12 md:p-16 bg-[#001D3D]">
+
+        <div class="text-center">
+            <h2 class="text-4xl font-bold text-[#FFD60A]">How It Works</h2>
+            <p class="text-white">Getting started is simple.</p>
+        </div> 
+       
+
+         <!--steps-->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 py-12  ">  
+
+            <!--step 1 -->
+               
+          <div class="w-full min-w-0 min-h-[200px] rounded-xl p-5 shadow-md hover:shadow-xl transition duration-300 flex  flex-col items-center border border-[#FFC300]">
+             <div class="w-12 h-12 rounded-full bg-[#ffb703] flex items-center justify-center text-[#003566]">
+             1
+             </div>
+
+             <div>
+                <h1 class="text-xl mdd:text-4xl font-bold text-center text-[#FFD60A]">Create your tasks</h1> 
+                <span class="text-center text-white">Add your daily tasks, projects to Taskflow.</span>
+
+             </div>
+          </div> 
+
+          <!--step 2-->
+
+            <div class="w-full min-w-0 min-h-[200px] rounded-xl p-5 shadow-md hover:shadow-xl transition duration-300 flex  flex-col items-center border border-[#FFC300]">
+             <div class="w-12 h-12 rounded-full bg-[#ffb703] flex items-center justify-center text-[#003566]">
+             2
+             </div>
+
+             <div>
+                <h1 class="text-xl mdd:text-4xl font-bold text-center text-[#FFD60A]">Prioritize and organize</h1> 
+                <span class="text-center text-white">Set priorities and plan your workflow.</span>
+
+             </div>
+          </div>
+        
+
+           <!--step 3-->
+
+            <div class="w-full min-w-0 min-h-[200px] rounded-xl p-5 shadow-md hover:shadow-xl transition duration-300 flex  flex-col items-center border border-[#FFC300]">
+             <div class="w-12 h-12 rounded-full bg-[#ffb703] flex items-center justify-center text-[#003566]">
+             3
+             </div>
+
+             <div>
+                <h1 class="text-xl mdd:text-4xl font-bold text-center text-[#FFD60A]">Complete and track progress</h1> 
+                <span class="text-center text-white">Finish tasks and track your achievements.</span>
+
+             </div>
+          </div>
+        
+        
+        </div>
+
+   </section> 
+
+
+
+<section id="pricing" class="bg-[#f8f7f2] px-5 py-16 md:px-16 md:py-24">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-12">
+       
+
+        <h2 class="text-3xl md:text-4xl font-bold text-[#023e7d] mt-3">
+            Choose the plan that works for you.
+        </h2>
+
+        <p class="text-gray-600 mt-4">
+            Start for free and upgrade when you're ready for more.
+        </p>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+        <!-- Free Plan -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm">
+            <h3 class="text-2xl font-bold text-[#023e7d]">Free</h3>
+
+            <p class="text-4xl font-bold text-[#023e7d] mt-4">
+                ₹0
+                <span class="text-sm font-normal text-gray-500">/ forever</span>
+            </p>
+
+            <p class="text-gray-600 mt-3">
+                Everything you need to get started.
+            </p>
+
+            <hr class="my-6">
+
+            <ul class="space-y-4 text-gray-700">
+                <li>✓ Up to 5 projects</li>
+                <li>✓ Basic task management</li>
+                <li>✓ Daily task planning</li>
+                <li>✓ Progress tracking</li>
+            </ul>
+
+            <a href="#contact"
+               class="block text-center mt-8 bg-[#023e7d] text-white py-3 rounded-lg hover:bg-[#012d5b] transition">
+                Get Started Free
+            </a>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="bg-white rounded-2xl p-8 shadow-md border-2 border-[#ffb703] relative">
+
+            <span class="absolute -top-3 right-6 bg-[#ffb703] text-[#023e7d] text-xs font-bold px-4 py-1 rounded-full">
+                POPULAR
+            </span>
+
+            <h3 class="text-2xl font-bold text-[#023e7d]">Pro</h3>
+
+            <p class="text-4xl font-bold text-[#023e7d] mt-4">
+                ₹299
+                <span class="text-sm font-normal text-gray-500">/ month</span>
+            </p>
+
+            <p class="text-gray-600 mt-3">
+                More tools for greater productivity.
+            </p>
+
+            <hr class="my-6">
+
+            <ul class="space-y-4 text-gray-700">
+                <li>✓ Unlimited projects</li>
+                <li>✓ Advanced task management</li>
+                <li>✓ Detailed progress insights</li>
+                <li>✓ Priority support</li>
+            </ul>
+
+            <a href="#contact"
+               class="block text-center mt-8 bg-[#ffb703] text-[#023e7d] py-3 rounded-lg font-semibold hover:bg-[#ffd166] transition">
+                Choose Pro
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!--contact-->
+ 
+    <section id="contact"  class="bg-[#eff6e0] px-5 py-16 md:px-16 md:py-24">
+
+      <div class="flex flex-col justify-center items-center pb-4">
+        <h1 class="text-[#000814] font-bold text-2xl md:text-4xl">Let's talk about productivity.</h1> 
+        <p class="text-center ">Have a question or feedback? We'd love to hear from you.</p>
+      </div> 
+
+
+        <form id="contactForm"
+        class="bg-white max-w-xl mx-auto p-6 md:p-10 rounded-2xl shadow-sm">
+
+        <!-- Email -->
+        <div class="mb-6">
+            <label for="email"
+                class="block text-[#023e7d] font-semibold mb-2">
+                Your Email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-[#023e7d] focus:ring-2 focus:ring-[#023e7d]/20 transition">
+        </div>
+
+        <!-- Message input  -->
+        <div class="mb-6">
+            <label for="message"
+                class="block text-[#023e7d] font-semibold mb-2">
+                Your Message
+            </label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Write your message..."
+                required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none resize-none focus:border-[#023e7d] focus:ring-2 focus:ring-[#023e7d]/20 transition"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button
+            type="submit"
+            class="w-full bg-[#023e7d] text-white font-semibold py-3 rounded-lg hover:bg-[#012d5b] transition">
+            Send Message
+        </button>
+
+        <!-- Success Message -->
+        <p id="successMessage"
+            class="hidden text-green-700 text-center mt-4 font-medium"
+            role="status">
+            Thank you! Your message has been received.
+        </p>
+
+    </form>
+
+
+
+    </section> 
+
+
+    <footer class="bg-[#000814]">
+    
+         <div class="flex justify-between p-4">
+           <div>
+             <h1 class="text-white">
+                Taskflow 
+            </h1> 
+          <p class="text-white hidden md:block">  Plan smarter. Stay focused. Get things done.</p>
+           </div>
+            <p class="text-white">Your productivity partner</p>
+         </div> 
+        <hr class="p-4 text-white"> 
+
+        <p class="text-white text-center">© 2026 Taskflow. All rights reserved.</p>
+
+
+    </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
